@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/frameLayout"
+    android:background="@color/primaryColor"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+    </LinearLayout>
+
+    <com.etebarian.meowbottomnavigation.MeowBottomNavigation
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:mbn_shadowColor="@color/shadowColor"
+        app:mbn_backgroundBottomColor="@color/backgroundBottomColor"
+        app:mbn_circleColor="@color/circleColor"
+        app:mbn_countBackgroundColor="@color/countBackgroundColor"
+        app:mbn_countTextColor="@color/countTextColor"
+        app:mbn_defaultIconColor="@color/defaultIconColor"
+        app:mbn_selectedIconColor="@color/selectedIconColor"/>
+
+<!--    DrawLayout-->
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawLayout"
+        android:layout_width="match_parent"
+        android:layout_height="590dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/main_toolbar" />
+            
+<!--            trang trí main-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp">
+
+                <ImageView
+                    android:id="@+id/i1"
+                    android:layout_width="10dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/location"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="3dp"/>
+
+                <TextView
+                    android:id="@+id/t1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delivery"
+                    android:textSize="16dp"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@id/i1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quốc lộ 1, Thừa Thiên Huế"
+                    android:textSize="14dp"
+                    android:textColor="#C3C3C3"
+                    android:layout_below="@id/t1"/>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/filter"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Today's Breakfast"
+                    android:textSize="24dp"
+                    android:textColor="#fff"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"/>
+
+                <RelativeLayout
+                    android:id="@+id/rtl.main"
+                    android:layout_width="400dp"
+                    android:layout_height="200dp"
+                    android:background="@drawable/big_card"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/tt1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Caramel Pancakes"
+                        android:textSize="24dp"
+                        android:textColor="#fff"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="120dp"/>
+
+                    <ImageView
+                        android:layout_width="110dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/rating_white_small"
+                        android:layout_below="@id/tt1"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+            
+<!--            ListView-->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcv_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@drawable/grad">
+
+            <include layout="@layout/main_nav_drawer" />
+
+        </RelativeLayout>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+
+</FrameLayout>

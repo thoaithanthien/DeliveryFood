@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FFD154</color>
+    <color name="purple_700">#CDDC39</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <color name="colorPrimarydetail">#151c25</color>
+    <color name="colorPrimaryDarkdetail">#151c25</color>
+    <color name="colorAccentdetail">#f1b814</color>
+    <color name="text_light_blue">#566f9a</color>
+
+<!--    color for bottomNavigation-->
+    <color name="selectedIconColor">#FF5722</color>
+    <color name="defaultIconColor">#F6F6F6</color>
+    <color name="countTextColor">#fff</color>
+    <color name="countBackgroundColor">#F45E0B</color>
+    <color name="circleColor">#fff</color>
+    <color name="backgroundBottomColor">#474442</color>
+    <color name="shadowColor">#2E2E2E</color>
+    <color name="primaryColor">#2e2e2e</color>
+    <color name="colorPrimary">#ffffff</color>
+
+    <color name="colorPrimaryDark">#ffffff</color>
+    <color name="colorAccent">#ffffff</color>
+    <!-- colors for button style -->
+
+
+    <color name="gradient_start_color">#4c84ff</color>
+    <color name="gradient_end_color">#18a3fe</color>
+    <!-- colors for tab and screent text -->
+
+    <color name="tab_indicator_gray">#c0c0c0</color>
+    <color name="intro_title_color">#000000</color>
+    <color name="intro_description_color">#656565</color>
+
+<!--    colors for profile-->
+    <color name="colorPrimaryProfile">#49BEFF</color>
+    <color name="colorPrimaryDarkProfile">#65DCE5</color>
+    <color name="colorAccentProfile">#0D5D98</color>
+    <color name="address">#2F7092</color>
+    <color name="followers">#0D5D98</color>
+    <color name="headings">#3797CF</color>
+    <color name="solidCircle">#AAFFFFFF</color>
+    <color name="circleBorder">#50FFFFFF</color>
+    <color name="gradEnd">#868f96</color>
+    <color name="gradStart">#596164</color>
+    <color name="followersBg">#868f96</color>
+    <color name="followingBg">#596164</color>
+    <color name="grey">#E5E5E5</color>
+
+</resources>

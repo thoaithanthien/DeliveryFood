@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/primaryColor"
+    app:cardCornerRadius="10dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:background="#000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_Fragment_Vegetables"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/menu_img1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <RelativeLayout
+            android:layout_width="316dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_Title_Vegetables"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Potato Fingers"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/img_Star_Vegetables"
+                android:layout_width="120dp"
+                android:layout_height="18dp"
+                android:layout_below="@id/tv_Title_Vegetables"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/rating_orange_small" />
+
+            <TextView
+                android:id="@+id/tv_moTa_Vegetables"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_Star_Vegetables"
+                android:layout_marginTop="8dp"
+                android:text="Non Vegetarian - Egg"
+                android:textColor="#C3C3C3"
+                android:textSize="14dp" />
+
+            <Button
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/button"
+                android:text="Order now"
+                android:textColor="#fff"
+                android:textSize="11dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
